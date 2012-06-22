@@ -1,0 +1,11 @@
+<p>{f:translate(key: 'greeting', arguments: {0: address.name}, htmlEscape: 'false')}</p>
+
+<f:translate key="unsubscribed.pretext" arguments="{0: address.email}" htmlEscape="false">
+	<p>Many thanks for vour visit!</p>
+
+	<p>Your newsletter subscription on www.decor-metall.com has been finished.<br />
+	Your registration and your email address {address.email} have been eliminated.</p>
+</f:translate>
+
+
+<f:render partial="Footer" />

@@ -1,0 +1,33 @@
+<h1 class="csc-firstHeader">Registrierung</h1>
+
+<f:if condition='{address.hidden}'>
+	<f:then>
+		<p>
+			Sie sind nicht mehr eingetragen.
+		</p>
+	</f:then>
+	<f:else>
+
+		<p>Die Felder, die mit einem Stern (*) markiert sind, müssen ausgefüllt werden!</p>
+		
+		<f:form.errors>
+		<f:if condition='{error}'>
+		<div class="alert alert-error">
+			<li data-code="error.{error.code}">
+				<f:translate key="error.{error.code}">{error.message}</f:translate>
+			</li>
+		</div>
+		</f:if>
+		</f:form.errors>
+
+		<f:form method="post" action="save" name="address" object="{address}" class="form-horizontal" >
+
+			<f:render partial="AddressFields" arguments="{address: address}" />
+
+			<div class="form-actions">
+				<f:form.submit value="{f:translate(key: 'subscribe')}" />
+			</div>
+
+		</f:form>
+	</f:else>
+</f:if>

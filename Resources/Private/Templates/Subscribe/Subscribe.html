@@ -1,0 +1,9 @@
+<f:if condition='{doubleOptInOverride}'>
+	<f:then>
+		<h1 class="csc-firstheader">Registrierung</h1>
+		<p>Der neue Eintrag für {address.email} wurde erstellt.</p>
+	</f:then>
+	<f:else>
+		{f:translate(key: 'subscribe.confirm', arguments: {0: address.email}, htmlEscape: 'false')}
+	</f:else>
+</f:if>

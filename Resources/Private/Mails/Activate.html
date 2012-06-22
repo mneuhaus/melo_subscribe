@@ -1,0 +1,17 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="{f:translate(key: 'activate.email.subject', arguments: {0: address.name}, htmlEscape: 'false')}" 
+	receipientEmail="{address.email}" 
+	receipientName="{address.name}"
+	/>
+
+<p>{f:translate(key: 'greeting', arguments: {0: address.name}, htmlEscape: 'false')}</p>
+
+
+{f:translate(key: 'activate.email.pretext', arguments: {0: address.email}, htmlEscape: 'false')}
+
+<p>
+<a href="http://www.decor-metall.de/unternehmen/newsletter/archiv/">http://www.decor-metall.de/unternehmen/newsletter/archiv/</a>
+</p>
+
+<f:render partial="EMailFooter" />

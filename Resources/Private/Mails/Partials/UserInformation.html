@@ -1,0 +1,15 @@
+<p>
+{f:translate(key: 'user.name')} {address.name} <br />
+{f:translate(key: 'user.email')} {address.email} <br />
+{f:translate(key: 'user.gender')} {address.gender} <br />
+{f:translate(key: 'user.branch')} {address.branch} <br />
+{f:translate(key: 'user.company')} {address.company} <br />
+{f:translate(key: 'user.address')} {address.address} <br />
+{f:translate(key: 'user.city')} {address.city} <br />
+{f:translate(key: 'user.zip')} {address.zip} <br />
+{f:translate(key: 'user.categories')} {address.categoryList} <br />
+<f:if condition="{address.keyAccount}">
+Key Account Manager: {address.keyAccount} <br />
+</f:if>
+{f:translate(key: 'user.post')} <f:if condition="{address.regularMail}"><f:then>Ja</f:then><f:else>Nein</f:else></f:if>
+</p>

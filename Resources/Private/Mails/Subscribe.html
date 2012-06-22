@@ -1,0 +1,22 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="{f:translate(key: 'subscribe.email.subject', arguments: {0: address.name}, htmlEscape: 'false')}" 
+	receipientEmail="{address.email}" 
+	receipientName="{address.name}"
+	/>
+
+<p>{f:translate(key: 'greeting', arguments: {0: address.name}, htmlEscape: 'false')}</p>
+
+<p>
+	{f:translate(key: 'subscribe.email.pretext', arguments: {0: address.name}, htmlEscape: 'false')}<br />
+	<f:link.action action="activate" controller="subscribe" pluginName="subscribe" absolute="true" arguments="{address: address, token: address.token}" additionalParams="{L: language}">{f:translate(key: 'subscribe.email.confirmAction', htmlEscape: 'false')}</f:link.action>
+</p>
+
+<f:render partial="UserInformation" arguments="{address: address}"/>
+
+<p>
+	{f:translate(key: 'subscribe.email.posttext', htmlEscape: 'false')}
+</p>
+
+
+<f:render partial="EMailFooter" />

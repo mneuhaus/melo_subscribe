@@ -1,0 +1,12 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="Benachrichtigung: hat das Newsletter-Abonnement auf www.decor-metall.com beendet." 
+	receipientEmail="{receipient}"
+	/>
+<p>
+hat das Newsletter-Abonnement auf www.decor-metall.com beendet.
+</p>
+
+<f:render partial="UserInformation" arguments="{address: address}"/>
+
+<f:render partial="EMailFooter" />

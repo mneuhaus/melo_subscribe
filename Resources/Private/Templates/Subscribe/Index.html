@@ -1,0 +1,45 @@
+{f:translate(key: 'register.pretext', htmlEscape: 'false')}
+
+<f:form.errors>
+<f:if condition='{error}'>
+<div class="alert alert-error">
+	<li data-code="error.{error.code}">
+		<f:translate key="error.{error.code}">{error.message}</f:translate>
+	</li>
+</div>
+</f:if>
+</f:form.errors>
+
+<f:form method="post" action="subscribe" name="address" object="{address}" class="form-horizontal" >
+
+	<f:render partial="AddressFields" arguments="{address: address, categories: categories}" />
+	
+	<div class="control-group">
+		<label for="moduleSysDmailCategory"><f:translate key="moduleSysDmailCategory" /></label>
+		<div class="controls">
+			<f:for each="{languageCategories}" as="category">
+				<f:form.checkbox class="check" id="moduleSysDmailHtml" name="moduleSysDmailCategory[{category.uid}]" value="{category.uid}" checked="{category.checked}" /> {category.category}<br/>
+			</f:for>
+
+			<f:form.errors for="moduleSysDmailCategory">
+				<p class="error">
+					<f:translate key="category.{error.code}" default="{error.message} (#{error.code})" />
+				</p>
+			</f:form.errors>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label for="name">&nbsp;</label>
+		<div class="controls">
+			<label>
+				<f:form.checkbox property="regularMail" value="true" /> {f:translate(key: 'regular_mail')}
+			</label>
+		</div>
+	</div>
+
+	<div class="form-actions">
+		<f:form.submit value="{f:translate(key: 'subscribe')}" />
+	</div>
+
+</f:form>

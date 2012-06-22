@@ -1,0 +1,21 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="Vielen Dank für Ihren Besuch!" 
+	receipientEmail="{address.email}" 
+	receipientName="{address.name}"
+	/>
+<p>Sehr geehrte(r) {address.name},</p>
+
+<p>
+Vielen Dank für Ihren Besuch!
+</p>
+
+<p>
+Ihr Newsletter-Abonnement auf www.decor-metall.com wurde beendet.
+</p>
+
+<p>
+Ihre Registrierung und Ihre E-Mail-Adresse {address.email} wurde von unserer Liste entfernt.
+</p>
+
+<f:render partial="EMailFooter" />

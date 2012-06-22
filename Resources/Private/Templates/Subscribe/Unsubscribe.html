@@ -1,0 +1,31 @@
+<h1 class="csc-firstHeader">{f:translate(key: 'unsubscribe.header', htmlEscape: 'false')}</h1>
+<p>
+	<f:flashMessages renderMode="div" class="alert alert-error" />
+</p>
+<f:if condition="{address}">
+	<f:then>
+		
+		{f:translate(key: 'unsubscribe.body', arguments: {0: address.email}, htmlEscape: 'false')}
+
+		<f:render partial="Footer" />
+		
+	</f:then>
+	<f:else>
+
+		<f:form method="post" action="unsubscribe" class="form-horizontal" >
+		
+			<div class="control-group">
+				<label for="name"><b>{f:translate(key: 'email')}</b> *</label>
+				<div class="controls">
+					<f:form.textfield name="email" />
+				</div>
+			</div>
+
+			<div class="form-actions">
+				<f:form.submit value="{f:translate(key: 'unsubscribe.action', htmlEscape: 'false')}" />
+			</div>
+
+		</f:form>
+
+	</f:else>
+</f:if>

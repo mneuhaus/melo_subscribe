@@ -1,0 +1,11 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="Benachrichtigung: Neues Newsletter-Abonnement für: {address.email}" 
+	receipientEmail="{receipient}"
+	/>
+
+<p>Ein neues Newsletter-Abonnement für decor metall wurde aufgenommen.</p>
+
+<f:render partial="UserInformation" arguments="{address: address}"/>
+
+<f:render partial="EMailFooter" />

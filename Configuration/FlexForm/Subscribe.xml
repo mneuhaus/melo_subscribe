@@ -1,0 +1,20 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+{namespace flux=Tx_Flux_ViewHelpers}
+<f:layout name="DynamicFlexForm.xml" />
+<f:section name="Configuration">
+  <flux:flexform id="my-flexform">
+    <flux:flexform.sheet name="tab1" label="Ansprechpartner">
+      
+      <flux:flexform.field.select name="settings.defaultAction" label="Variante" commaSeparatedItems="Anmelden,Abmelden,Manueller Eintrag" />
+
+      <flux:flexform.field.checkbox name="settings.sendConfirmation" label="Send confirmation E-Mail" />
+	  <flux:flexform.field.checkbox name="settings.sendAdminNotification" label="Send Notification E-Mail" />
+      <flux:flexform.field.text name="settings.adminEmail" label="E-Mail to send the Notification E-Mail to" />
+      
+    </flux:flexform.sheet>
+  </flux:flexform>
+</f:section>
+ 
+<f:section name="Preview">
+  <b>Send confirmation E-Mail:</b> {settings.sendConfirmation}<br />
+</f:section>

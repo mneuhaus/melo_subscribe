@@ -1,0 +1,64 @@
+<h1 class="csc-firstHeader">Interne Registrierung ohne extra Bestätigung</h1>
+<p>Dieses Anmeldeformular ist für interne Registrierungen gedacht, bei denen das Double OptIn anderweitig telefonisch oder persöhnlich erteilt wurde.<br />Die angemeldete E-Mail muss nicht extra die Eintragung bestätigen, sondern bekommt direkt die Anmeldebestätigung.</p>
+
+<p>Die Felder, die mit einem Stern (*) markiert sind, müssen ausgefüllt werden!</p>
+
+<f:form.errors>
+<f:if condition='{error}'>
+<div class="alert alert-error">
+	<li data-code="error.{error.code}">
+		{error.message}
+		<f:translate key="error.{error.code}">{error.message}</f:translate>
+	</li>
+</div>
+</f:if>
+</f:form.errors>
+
+<f:form method="post" action="subscribe" name="address" object="{address}" class="form-horizontal" >
+
+	<f:render partial="AddressFields" arguments="{address: address, categories: categories}" />
+	
+	<div class="control-group">
+		<label for="moduleSysDmailCategory"><f:translate key="moduleSysDmailCategory" /></label>
+		<div class="controls">
+			<f:for each="{languageCategories}" as="category">
+				<f:form.checkbox class="check" id="moduleSysDmailHtml" name="moduleSysDmailCategory[{category.uid}]" value="{category.uid}" checked="{category.checked}" /> {category.category}<br/>
+			</f:for>
+
+			<f:form.errors for="moduleSysDmailCategory">
+				<p class="error">
+					<f:translate key="category.{error.code}" default="{error.message} (#{error.code})" />
+				</p>
+			</f:form.errors>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label for="keyAccount">{f:translate(key: 'keyAccount')}</label>
+		<div class="controls">
+			<f:form.textfield property="keyAccount" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label for="name">&nbsp;</label>
+		<div class="controls">
+			<label>
+				<f:form.checkbox property="regularMail" value="true" /> Werbung per Post
+			</label>
+
+			<label>
+				<f:form.checkbox name="doubleOptInOverride" value="true" checked="checked" /> Diese Eintragung muss nicht per E-Mail bestätigt werden, weil die Bestätigung bereits anderweitig erteilt wurde.
+			</label>
+		</div>
+	</div>
+
+	<div class="form-actions">
+		<f:form.submit value="{f:translate(key: 'subscribe')}" />
+	</div>
+
+</f:form>
+
+<f:link.action action="unsubscribe" controller="subscribe" pluginName="subscribe" absolute="true">
+	Abmelden
+</f:link.action>

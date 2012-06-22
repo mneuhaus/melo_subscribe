@@ -1,0 +1,44 @@
+plugin.tx_melosubscribe {
+	view {
+		templateRootPath = EXT:melo_subscribe/Resources/Private/Templates/
+		partialRootPath = EXT:melo_subscribe/Resources/Private/Partial/
+		layoutRootPath = EXT:melo_subscribe/Resources/Private/Layout/
+	}
+	settings {
+		sendConfirmation = 0
+		mail {
+			templateRootPath = EXT:melo_subscribe/Resources/Private/Mails/
+			fromName = decor metall
+			fromEmail = info@decor-metall.de
+		}
+
+        module_sys_dmail_category_PIDLIST = 173
+        module_sys_dmail_language_category_PIDLIST = 188
+	}
+
+	persistence {
+		storagePid = 167
+
+		classes {
+			Tx_MeloSubscribe_Domain_Model_Address {
+				newRecordStoragePid = 167
+				mapping {
+					tableName = tt_address
+					#recordType = Tx_Extbase_Domain_Model_FrontendUserGroup
+					columns {
+						tx_melosubscribe_branch.mapOnProperty = branch
+						tx_melosubscribe_regular_mail.mapOnProperty = regularMail
+						tx_melosubscribe_token.mapOnProperty = token
+						tx_melosubscribe_crdate.mapOnProperty = crdate
+						tx_melosubscribe_key_account.mapOnProperty = keyAccount
+					}
+				}
+			}
+			Tx_MeloSubscribe_Domain_Model_Category {
+				mapping {
+					tableName = sys_dmail_category
+				}
+			}
+		}
+	}
+}

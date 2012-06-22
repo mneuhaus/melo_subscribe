@@ -1,0 +1,11 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="Neue manuelle Eintragung für den decor metall Newsletter: {address.email}" 
+	receipientEmail="{receipient}"
+	/>
+
+<p>Es wurde ein neues Newsletter-Abonnement ohne DoubleOptIn aufgenommen.</p>
+
+<f:render partial="UserInformation" arguments="{address: address}"/>
+
+<f:render partial="EMailFooter" />

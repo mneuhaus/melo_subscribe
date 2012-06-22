@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for database tables/fields belonging to extension 'melo_subscribe'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="Mr">Mr.</label>
+            <label index="Ms">Ms.</label>
+            <label index="email">E-Mail</label>
+            <label index="firstname">firstname</label>
+            <label index="lastname">surname</label>
+            <label index="branch">business sector</label>
+            <label index="company">Company</label>
+            <label index="address">Address</label>
+            <label index="city">City</label>
+            <label index="zip">postal code</label>
+            <label index="phone">Phone</label>
+            <label index="regular_mail">I would like to receive advertisement by post</label>
+            <label index="subscribe">Subscribe</label>
+            <label index="confirm">Confirm</label>
+            <label index="keyAccount">Key Account Manager</label>
+            <label index="confirm.body">Are you sure, you want to unsubscribe?</label>
+
+
+            <label index="user.name">Name:</label>
+            <label index="user.email">E-Mail:</label>
+            <label index="user.gender">Gender:</label>
+            <label index="user.branch">Business sector:</label>
+            <label index="user.company">Company:</label>
+            <label index="user.addresss">Street:</label>
+            <label index="user.city">City:</label>
+            <label index="user.zip">ZIP:</label>
+            <label index="user.categories">Categories:</label>
+            <label index="user.post">Advertisement by post:</label>
+
+            <label index="email.footer"><![CDATA[
+                <p>Be inspired!</p>
+
+                <p>
+                Best regards…<br />
+                decor metall GmbH <br />
+                Benzstraße 1-5 <br />
+                32108 Bad Salzuflen
+                </p>
+
+                <p>
+                Tel +49 5222 286-0 <br />
+                Fax +49 5222 286-189 <br />
+                GmbH mit Sitz in Bad Salzuflen <br />
+                Amtsgericht Lemgo HRB 7074 <br />
+                Geschäftsführer: Dr. Frank Töfflinger <br />
+                USt-IdNr.: DE815129741 <br />
+                </p>
+
+                <p>
+                <a href="www.decor-metall.de">www.decor-metall.de</a><br />
+                <a href="mailto:newsletter@decor-metall.com">newsletter@decor-metall.com</a>
+                </p>
+            ]]></label>
+
+            <label index="subscribe.email.subject">Please activate your subscription</label>
+            <label index="subscribe.email.body">Please click on the following Link to activate your Subscription:</label>
+
+            <label index="subscribe.admin.mail.subject">New Newsletter Subscription</label>
+            <label index="subscribe.admin.mail.body">There was a new Newsletter Subscription</label>
+            <label index="error.1245107351">E-Mail is required!</label>
+
+            <label index="register.pretext"><![CDATA[
+                <h1 class="csc-firstHeader">Registration</h1>
+                <p>Decor metall newsletter „the shop innovators „ informs you regularly and  without obligation about product and company news, organisation of trade fairs and events as well as subjects and how to present goods.</p>
+
+                <p>All fields marked with a star (*) must be filled in!</p>
+            ]]></label>
+
+            <label index="subscribe.confirm"><![CDATA[
+                <h1 class="csc-firstheader">Registration</h1>
+
+                <p>Dear Sir/Madam…</p>
+
+                <p>Please confirm your registration.</p>
+
+                <p>Your subscription has been accepted. We will send a message to your email address <b>%0s</b> so that you can confirm your newsletter subscription for a second time.</p>
+
+                <p>To confirm your newsletter subscription for www.decor-metall.com, please follow the instructions according to the email.</p>
+
+                <p>Be inspired!</p>
+
+                <p>
+                Best regards…<br />
+                decor metall GmbH<br />
+                Benzstraße 1-5<br />
+                32108 Bad Salzuflen<br />
+                </p>
+
+                <p>
+                Tel +49 5222 286-0<br />
+                Fax +49 5222 286-189<br />
+                GmbH mit Sitz in Bad Salzuflen <br />
+                Amtsgericht Lemgo HRB 7074 <br />
+                Geschäftsführer: Dr. Frank Töfflinger<br />
+                USt-IdNr.: DE815129741
+                </p>
+            ]]></label>
+            <label index="subscribe.email.pretext"><![CDATA[
+                Please confirm our newsletter subscription on www.decor-metall.com
+            ]]></label>
+            <label index="greeting">Dear Mr./Ms. %0s,</label>
+            <label index="subscribe.email.pretext"><![CDATA[
+                We are sending you this email because you have registered yourself for the newsletter on www.decor-metall.com. You will receive the newsletter after confirmation of your registration. Please follow the link in order to confirm your registration: 
+            ]]></label>
+            <label index="subscribe.email.confirmAction"><![CDATA[
+                confirmation of subscription 
+            ]]></label>
+
+            <label index="activate.email.subject"><![CDATA[
+                Registration confirmed.
+            ]]></label>
+
+            <label index="activate.email.pretext"><![CDATA[
+                <p>Many thanks for your newsletter subscription on www.decor-metall.com.</p>
+<p>You will receive our newsletter „the shop innovators“directly to your email address %0s.</p>
+<p>You will find earlier articles via the following link:</p>
+            ]]></label>
+
+            <label index="unsubscribe.header">How to cancel the newsletter</label>
+            <label index="unsubscribe.action">Submit</label>
+            <label index="unsubscribe.body"><![CDATA[
+                        <p>
+We send you an email to the following address: %0s <br />
+The message includes two links with which you can change your subscription on www.decor-metall.com or cancel it. <br />
+Please follow the instructions within in this email to change your newsletter subscription or to cancel it. <br />
+        </p>
+            ]]></label>
+            <label index="unsubscribed.pretext">
+                <![CDATA[
+                <p>Many thanks for vour visit!</p>
+
+    <p>Your newsletter subscription on www.decor-metall.com has been finished.<br />
+    Your registration and your email address %0s have been eliminated.</p>
+    ]]>
+            </label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="Mr">Herr</label>
+            <label index="Ms">Frau</label>
+            <label index="email">E-Mail</label>
+            <label index="firstname">Vorname</label>
+            <label index="lastname">Nachname</label>
+            <label index="branch">Branche</label>
+            <label index="company">Firma</label>
+            <label index="address">Adresse</label>
+            <label index="city">Stadt</label>
+            <label index="zip">PLZ</label>
+            <label index="keyAccount">Key Account Manager</label>
+            <label index="phone">Telefon</label>
+            <label index="regular_mail">Ich möchte Werbung per Post erhalten</label>
+            <label index="subscribe">Anmelden</label>
+            <label index="confirm">Bestätigen</label>
+            <label index="confirm.body">Sind Sie sicher, dass Sie den Newsletter abbestellen wollen?</label>
+
+            <label index="user.name">Name:</label>
+            <label index="user.email">E-Mail:</label>
+            <label index="user.gender">Geschlecht:</label>
+            <label index="user.branch">Branche:</label>
+            <label index="user.company">Firma:</label>
+            <label index="user.addresss">Straße:</label>
+            <label index="user.city">Stadt:</label>
+            <label index="user.zip">PLZ:</label>
+            <label index="user.categories">Kategorien:</label>
+            <label index="user.post">Werbung per Post:</label>
+
+            <label index="email.footer"><![CDATA[
+                <p>
+                Wir wünschen viel Inspiration!
+                </p>
+
+                <p>
+                Freundliche Grüße
+                </p>
+
+                <p>
+                decor metall GmbH <br />
+                Benzstraße 1-5 <br />
+                32108 Bad Salzuflen
+                </p>
+
+                <p>
+                Tel +49 5222 286-0 <br />
+                Fax +49 5222 286-189 <br />
+                GmbH mit Sitz in Bad Salzuflen <br />
+                Amtsgericht Lemgo HRB 7074 <br />
+                Geschäftsführer: Dr. Frank Töfflinger <br />
+                USt-IdNr.: DE815129741 <br />
+                </p>
+
+                <p>
+                <a href="www.decor-metall.de">www.decor-metall.de</a><br />
+                <a href="mailto:newsletter@decor-metall.com">newsletter@decor-metall.com</a>
+                </p>
+            ]]></label>
+
+            <label index="subscribe.email.subject">Bitte aktivieren Sie ihre Anmeldung</label>
+            <label index="subscribe.email.body">Bitte klicken Sie auf den folgenden Link um die Anmeldung zu aktivieren:</label>
+
+            <label index="subscribe.email.subject">Neue Newsletter Anmeldung</label>
+            <label index="subscribe.email.body">Eine neue Person hat sich für den Newsletter angemeldet</label>
+            <label index="error.1245107351">Die E-Mail Adresse muss ausgefüllt werden!</label>
+
+            <label index="register.pretext"><![CDATA[
+                <h1 class="csc-firstHeader">Registrierung</h1>
+                <p>Der decor metall Newsletter "the shop innovators" informiert Sie regelmäßig und unverbindlich über Produkt- und Unternehmens-News, Messen und Veranstaltungen sowie über Wissenswertes rund um das Thema Warenpräsentation.</p>
+
+                <p>Die Felder, die mit einem Stern (*) markiert sind, müssen ausgefüllt werden!</p>
+            ]]></label>
+
+            <label index="subscribe.confirm"><![CDATA[
+                <h1 class="csc-firstheader">Registrierung</h1>
+
+                <p>Sehr geehrte(r) ,</p>
+                <p>
+                Bitte bestätigen Sie Ihre Registrierung.<br />
+                Ihr Abonnement wurde aufgenommen. Wir werden Ihnen eine Nachricht an Ihre E-Mail-Adresse <b> %0s </b> senden, damit Sie das Newsletter-Abonnement ein zweites Mail bestätigen können.<br />
+                Um Ihr Newsletter-Abonnement für www.decor-metall.com zu bestätigen, folgen Sie bitte den Anweisungen in der E-Mail.
+                </p>
+
+                <p>
+                Wir wünschen viel Inspiration!<br />
+                Freundliche Grüße<br />
+                decor metall GmbH<br />
+                Benzstraße 1-5<br />
+                32108 Bad Salzuflen<br />
+                </p>
+
+                <p>
+                Tel +49 5222 286-0<br />
+                Fax +49 5222 286-189<br />
+                GmbH mit Sitz in Bad Salzuflen <br />
+                Amtsgericht Lemgo HRB 7074 <br />
+                Geschäftsführer: Dr. Frank Töfflinger<br />
+                USt-IdNr.: DE815129741
+                </p>
+            ]]></label>
+            <label index="subscribe.email.subject"><![CDATA[
+                Bitte bestätigen Sie Ihr Newsletter-Abonnement für www.decor-metall.com.
+            ]]></label>
+            <label index="subscribe.email.pretext"><![CDATA[
+                Wir senden Ihnen diese Nachricht, weil Sie sich für den Newsletter auf www.decor-metall.com registriert haben. Sie werden den Newsletter erst nach Bestätigung Ihrer Registrierung erhalten. Folgen Sie bitte diesem Link, um die Registrierung zu bestätigen: 
+            ]]></label>
+            <label index="greeting">Sehr geehrte(r) %0s,</label>
+            <label index="subscribe.email.confirmAction"><![CDATA[
+                Abonnement bestätigen
+            ]]></label>
+            <label index="subscribe.email.posttext"><![CDATA[
+                Sie erhalten diese E-Mail, weil wir sicher gehen möchten, dass Ihre E-Mail-Adresse korrekt ist und die Anmeldung tatsächlich von Ihnen  stammt. Sollten Sie sich nicht selbst registriert haben, können Sie diese E-Mail einfach ignorieren.
+            ]]></label>
+
+            <label index="activate.email.subject"><![CDATA[
+                Registrierung bestätigt
+            ]]></label>
+
+            <label index="activate.email.pretext"><![CDATA[
+                <p>
+wie vereinbart, haben wir Sie in unseren Newsletter-Verteiler aufgenommen. <br />
+Zukünftig erhalten Sie unseren Newsletter »the shop innovators« direkt an Ihre E-Mail-Adresse  {address.email} eintragen.
+</p>
+
+<p>
+Bis es soweit ist, finden Sie frühere Ausgaben unter folgendem Link:
+</p>
+            ]]></label>
+            <label index="unsubscribe.header">Newsletter abbestellen</label>
+            <label index="unsubscribe.action">Absenden</label>
+            <label index="unsubscribe.body"><![CDATA[
+                        <p>
+        Wir senden Ihnen eine E-Mail an die Adresse: %0s<br />
+        Die Nachricht enthält zwei Links, mit denen Sie Ihr Abonnement auf www.decor-metall.com ändern oder kündigen können.<br />
+        Bitte folgen Sie den Anweisungen in dieser E-Mail, um Ihr Newsletter-Abonnement zu ändern oder zu kündigen.<br />
+        </p>
+            ]]></label>
+            <label index="edit.email.pretext">
+                <![CDATA[<p>Sie erhalten diese E-Mail, weil Sie ihre Daten für das Newsletter-Abonnement auf www.decor-metall.com ändern oder löschen möchten.&nbsp;</p>]]>
+            </label>
+            <label index="edit.email.change">
+                <![CDATA[<p>Wenn Sie Ihr Newsletter-Abonnement ändern möchten, folgen Sie bitte diesem Link:</p>]]>
+            </label>
+            <label index="edit.email.footnote">
+                <![CDATA[(Klicken Sie auf den Link oder kopieren Sie ihn in die Adresszeile Ihres Browsers.)]]>
+            </label>
+            <label index="edit.email.cancel">
+                <![CDATA[<p>Wenn Sie Ihr Newsletter-Abonnement kündigen möchten, folgen Sie bitte diesem Link:</p>]]>
+            </label>
+            <label index="edit.email.subject">
+                <![CDATA[Ihr Newsletter-Abonnement für www.decor-metall.com]]>
+            </label>
+            <label index="unsubscribed.pretext">
+                <![CDATA[<p>
+Vielen Dank für Ihren Besuch! <br />
+Ihr Newsletter-Abonnement auf www.decor-metall.com wurde beendet. <br />
+Ihre Registrierung und Ihre E-Mail-Adresse %0s wurde von unserer Liste entfernt.
+</p>]]>
+            </label>
+        </languageKey>
+    </data>
+</T3locallang>

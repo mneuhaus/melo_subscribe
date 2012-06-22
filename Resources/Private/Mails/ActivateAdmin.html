@@ -1,0 +1,12 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="Die registrierung für decor-metall.com wurde bestätigt für: {address.email}" 
+	receipientEmail="{receipient}"
+	/>
+<p>
+Die Registrierung von für den Newsletter auf www.decor-metall.com wurde bestätigt.
+</p>
+
+<f:render partial="UserInformation" arguments="{address: address}"/>
+
+<f:render partial="EMailFooter" />

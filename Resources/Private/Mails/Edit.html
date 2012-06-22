@@ -1,0 +1,48 @@
+{namespace m=Tx_MeloSubscribe_ViewHelpers}
+<m:mail 
+	subject="{f:translate(key: 'edit.mail.subject', default: 'Your newsletter subscription on www.decor-metall.com')}" 
+	receipientEmail="{address.email}" 
+	receipientName="{address.name}"
+	/>
+
+<p>{f:translate(key: 'greeting', arguments: {0: address.name}, htmlEscape: 'false')}</p>
+
+
+<f:translate key="edit.mail.pretext">
+	<p>
+	You have received this email because you would like to change or delete your data for this newsletter subscription.
+	</p>
+</f:translate>
+
+<f:render partial="UserInformation" arguments="{address: address}"/>
+
+<f:translate key="edit.mail.change">
+	<p>
+	In order to change your newsletter subscription, please follow the link:
+	</p>
+</f:translate>
+
+<p>
+<f:link.action action="edit" controller="subscribe" pluginName="subscribe" absolute="true" arguments="{address: address, token: address.token}">
+<f:uri.action action="edit" controller="subscribe" pluginName="subscribe" absolute="true" arguments="{address: address, token: address.token}" />
+</f:link.action><br />
+<f:translate key="edit.mail.footnote">
+	(Click on the link or copy it into the address bar of your browser.)
+</f:translate>
+</p>
+
+<f:translate key="edit.mail.footnote">
+	<p>In order to cancel your newsletter subscription, please follow the link:</p>
+</f:translate>
+
+<p>
+<f:link.action action="cancel" controller="subscribe" pluginName="subscribe" absolute="true" arguments="{address: address, token: address.token}">
+<f:uri.action action="cancel" controller="subscribe" pluginName="subscribe" absolute="true" arguments="{address: address, token: address.token}" />
+</f:link.action><br />
+<f:translate key="edit.mail.footnote">
+	(Click on the link or copy it into the address bar of your browser.)
+</f:translate>
+</p>
+
+
+<f:render partial="EMailFooter" />
